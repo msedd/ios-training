@@ -20,10 +20,16 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-YM-mrQ">
                                 <rect key="frame" x="41" y="407" width="68" height="68"/>
                                 <state key="normal" image="btn_wrong"/>
+                                <connections>
+                                    <action selector="wrong:" destination="5Ni-FM-GaW" eventType="touchUpInside" id="83g-1a-OZe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-Fd-m9s">
                                 <rect key="frame" x="212" y="407" width="68" height="68"/>
                                 <state key="normal" image="btn_correct"/>
+                                <connections>
+                                    <action selector="correct:" destination="5Ni-FM-GaW" eventType="touchUpInside" id="6Cr-LF-ApA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-Ig-xnP">
                                 <rect key="frame" x="126" y="407" width="68" height="68"/>

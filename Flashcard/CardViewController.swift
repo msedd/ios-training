@@ -31,7 +31,6 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +42,25 @@ class CardViewController: UIViewController {
         self.flipped = !self.flipped
         self.updateView()
     }
+    
+    @IBAction func correct(sender: AnyObject) {
+        showNextCard()
+    }
+    
+    
+    @IBAction func wrong(sender: AnyObject) {
+        showNextCard()
+    }
+    
+    func showNextCard() {
+        if let card = self.card, let index = cards.indexOf(card)?.successor() where cards.indices.contains(index) {
+        // Nächste Lernkarte:
+            self.card = cards[index]
+            self.flipped = false
+            updateView();
+        }
+    }
+    
     private func updateView() {
         if self.isViewLoaded(){
             updateViewText()
