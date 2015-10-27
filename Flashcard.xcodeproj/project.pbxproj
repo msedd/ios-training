@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */; };
-		5EB74E5E1BDE1F8900FD62FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E5D1BDE1F8900FD62FE /* ViewController.swift */; };
 		5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */; };
 		5EB74E631BDE1F8900FD62FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E621BDE1F8900FD62FE /* Assets.xcassets */; };
 		5EB74E661BDE1F8900FD62FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */; };
 		5EB74E711BDE1F8900FD62FE /* FlashcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E701BDE1F8900FD62FE /* FlashcardTests.swift */; };
 		5EB74E7C1BDE1F8900FD62FE /* FlashcardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E7B1BDE1F8900FD62FE /* FlashcardUITests.swift */; };
+		5EB74E8B1BDE5E8200FD62FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E8A1BDE5E8200FD62FE /* Card.swift */; };
+		5EB74E8D1BDE5E9800FD62FE /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E8C1BDE5E9800FD62FE /* Deck.swift */; };
+		5EB74E8F1BDE5EBD00FD62FE /* FlashcardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E8E1BDE5EBD00FD62FE /* FlashcardsModel.swift */; };
+		5EB74E951BDE819600FD62FE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E941BDE819600FD62FE /* CardViewController.swift */; };
+		5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */; };
+		5EB74E991BDF80ED00FD62FE /* DecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		5EB74E581BDE1F8900FD62FE /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EB74E5D1BDE1F8900FD62FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EB74E601BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EB74E621BDE1F8900FD62FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EB74E651BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		5EB74E771BDE1F8900FD62FE /* FlashcardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E7B1BDE1F8900FD62FE /* FlashcardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardUITests.swift; sourceTree = "<group>"; };
 		5EB74E7D1BDE1F8900FD62FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB74E8A1BDE5E8200FD62FE /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5EB74E8C1BDE5E9800FD62FE /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		5EB74E8E1BDE5EBD00FD62FE /* FlashcardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsModel.swift; sourceTree = "<group>"; };
+		5EB74E941BDE819600FD62FE /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDecksTableViewController.swift; sourceTree = "<group>"; };
+		5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,15 @@
 		5EB74E5A1BDE1F8900FD62FE /* Flashcard */ = {
 			isa = PBXGroup;
 			children = (
+				5EB74E891BDE5E5700FD62FE /* model */,
 				5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */,
-				5EB74E5D1BDE1F8900FD62FE /* ViewController.swift */,
 				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
+				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
+				5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */,
 				5EB74E621BDE1F8900FD62FE /* Assets.xcassets */,
 				5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */,
 				5EB74E671BDE1F8900FD62FE /* Info.plist */,
+				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
 			);
 			path = Flashcard;
 			sourceTree = "<group>";
@@ -123,6 +136,16 @@
 				5EB74E7D1BDE1F8900FD62FE /* Info.plist */,
 			);
 			path = FlashcardUITests;
+			sourceTree = "<group>";
+		};
+		5EB74E891BDE5E5700FD62FE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5EB74E8A1BDE5E8200FD62FE /* Card.swift */,
+				5EB74E8C1BDE5E9800FD62FE /* Deck.swift */,
+				5EB74E8E1BDE5EBD00FD62FE /* FlashcardsModel.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB74E5E1BDE1F8900FD62FE /* ViewController.swift in Sources */,
+				5EB74E8D1BDE5E9800FD62FE /* Deck.swift in Sources */,
+				5EB74E8B1BDE5E8200FD62FE /* Card.swift in Sources */,
+				5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */,
+				5EB74E951BDE819600FD62FE /* CardViewController.swift in Sources */,
+				5EB74E991BDF80ED00FD62FE /* DecksTableViewController.swift in Sources */,
 				5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */,
+				5EB74E8F1BDE5EBD00FD62FE /* FlashcardsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -482,6 +510,7 @@
 				5EB74E821BDE1F8900FD62FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EB74E831BDE1F8900FD62FE /* Build configuration list for PBXNativeTarget "FlashcardTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +519,7 @@
 				5EB74E851BDE1F8900FD62FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EB74E861BDE1F8900FD62FE /* Build configuration list for PBXNativeTarget "FlashcardUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +528,7 @@
 				5EB74E881BDE1F8900FD62FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
