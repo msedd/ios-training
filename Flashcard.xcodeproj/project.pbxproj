@@ -110,12 +110,12 @@
 				5EB74E891BDE5E5700FD62FE /* model */,
 				5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */,
 				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
-				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
 				5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */,
+				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
+				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
 				5EB74E621BDE1F8900FD62FE /* Assets.xcassets */,
 				5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */,
 				5EB74E671BDE1F8900FD62FE /* Info.plist */,
-				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
 			);
 			path = Flashcard;
 			sourceTree = "<group>";

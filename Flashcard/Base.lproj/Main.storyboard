@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fas-M3-54W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="-227"/>
+            <point key="canvasLocation" x="460" y="87"/>
         </scene>
         <!--Add Decks Table View Controller-->
         <scene sceneID="7U1-XV-AYD">
@@ -119,7 +119,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixP-hb-7wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="-221"/>
+            <point key="canvasLocation" x="460" y="-595"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="KgX-N2-1WB">
@@ -146,6 +146,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Ni-FM-GaW" kind="show" identifier="ShowDeck" id="zNf-Cd-YfA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

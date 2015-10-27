@@ -28,5 +28,14 @@ class DecksTableViewController: UITableViewController {
         cell.textLabel?.text = deck.name
         return cell
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowDeck" {
+        let cell = sender as! UITableViewCell
+        let indexPath = self.tableView.indexPathForCell(cell)!
+        let deck = decks[indexPath.row]
+        let controller = segue.destinationViewController as! CardViewController
+        controller.cards = deck.cardsToLearn
+        }
+    }
 
 }

@@ -13,6 +13,12 @@ class Deck : NSObject{
     var name : String = ""
     var cards : [Card] = []
     
+    var cardsToLearn : [Card] {
+        get {
+        return self.cards
+        }
+    }
+    
     func createCard(frontText: String, backText: String) -> Card {
         let card = Card()
         card.frontText = frontText

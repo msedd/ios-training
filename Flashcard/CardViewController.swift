@@ -17,6 +17,16 @@ class CardViewController: UIViewController {
     
     private var flipped : Bool = false
     
+    var card: Card?{
+        didSet {
+            updateView()
+        }
+    }
+    var cards: [Card]=[]{
+        didSet{
+            self.card = cards.first
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +44,14 @@ class CardViewController: UIViewController {
         self.updateView()
     }
     private func updateView() {
-        updateViewText()
-        updateViewButtons()
+        if self.isViewLoaded(){
+            updateViewText()
+            updateViewButtons()
+        }
     }
     private func updateViewText() {
-        if flipped {
-        cardView.text = "Rückseite" }else{
-        cardView.text = "Vorderseite"
-        }
+
+        cardView.text = flipped ? card?.backText : card?.frontText
     }
     private func updateViewButtons() {
         buttonWrong.hidden = !flipped
