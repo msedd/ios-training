@@ -12,16 +12,27 @@ typealias JSONDictionary = [String:AnyObject]
 
 class DeckLibrary {
     
-    var downloads = [JSONDictionary]()
+    var downloads = [DeckDownload]()
     
     func load() {
         let url = NSBundle.mainBundle().URLForResource("sets", withExtension: "json")!
         let data = NSData(contentsOfURL: url)!
+        
         let jsonObject = try! NSJSONSerialization.JSONObjectWithData(data, options: [])
+        handleJSON(jsonObject)
+    
+    }
+        
+    func handleJSON(jsonObject : AnyObject) {
         
         let json = jsonObject as! JSONDictionary
-        self.downloads = json["sets"] as! [JSONDictionary]
-    
+        let jsonSets = json["sets"] as! [AnyObject]
+
+        
+        self.downloads = []
+        for jsonSet in jsonSets {
+            self.downloads.append(DeckDownload(jsonObject: jsonSet))
+        }
     }
 
 }

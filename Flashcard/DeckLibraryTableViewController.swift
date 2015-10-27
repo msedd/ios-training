@@ -30,7 +30,7 @@ class DeckLibraryTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("DeckDownloadCell" , forIndexPath: indexPath)
         let download = self.deckLibrary.downloads[indexPath.row]
-        cell.textLabel?.text = download["title"] as? String
+        cell.textLabel?.text = download.title
         return cell
     }
 
