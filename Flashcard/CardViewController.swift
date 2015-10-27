@@ -30,6 +30,7 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateView()
 
     }
 
@@ -58,6 +59,11 @@ class CardViewController: UIViewController {
             self.card = cards[index]
             self.flipped = false
             updateView();
+        }
+        else{
+        // Letzte Lernkarte:
+        // ViewController vom Navigations-Stapel entfernen 
+        self.navigationController?.popViewControllerAnimated(true)
         }
     }
     

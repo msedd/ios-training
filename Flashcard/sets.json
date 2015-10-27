@@ -1,0 +1,16 @@
+{
+    "sets": [
+        {
+            "id": 1,
+            "title": "Spanish/English: Animals"
+        },
+        {
+            "id": 2,
+            "title": "German/English: Common verbs"
+        },
+        {
+            "id": 3,
+            "title": "English/French: Common verbs"
+        }
+    ]
+}

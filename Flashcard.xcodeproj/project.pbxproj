@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E34344F1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */; };
+		5E3434541BDFC277007EEFE5 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3434501BDFC277007EEFE5 /* 1.json */; };
+		5E3434551BDFC277007EEFE5 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3434511BDFC277007EEFE5 /* 2.json */; };
+		5E3434561BDFC277007EEFE5 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3434521BDFC277007EEFE5 /* 3.json */; };
+		5E3434571BDFC277007EEFE5 /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3434531BDFC277007EEFE5 /* sets.json */; };
+		5E3434591BDFC682007EEFE5 /* DeckLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */; };
 		5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */; };
 		5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */; };
 		5EB74E631BDE1F8900FD62FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E621BDE1F8900FD62FE /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibraryTableViewController.swift; sourceTree = "<group>"; };
+		5E3434501BDFC277007EEFE5 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		5E3434511BDFC277007EEFE5 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		5E3434521BDFC277007EEFE5 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		5E3434531BDFC277007EEFE5 /* sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets.json; sourceTree = "<group>"; };
+		5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibrary.swift; sourceTree = "<group>"; };
 		5EB74E581BDE1F8900FD62FE /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB74E601BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +124,7 @@
 				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
 				5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */,
 				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
+				5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */,
 				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
 				5EB74E621BDE1F8900FD62FE /* Assets.xcassets */,
 				5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */,
@@ -141,9 +154,14 @@
 		5EB74E891BDE5E5700FD62FE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				5E3434501BDFC277007EEFE5 /* 1.json */,
+				5E3434511BDFC277007EEFE5 /* 2.json */,
+				5E3434521BDFC277007EEFE5 /* 3.json */,
+				5E3434531BDFC277007EEFE5 /* sets.json */,
 				5EB74E8A1BDE5E8200FD62FE /* Card.swift */,
 				5EB74E8C1BDE5E9800FD62FE /* Deck.swift */,
 				5EB74E8E1BDE5EBD00FD62FE /* FlashcardsModel.swift */,
+				5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -252,9 +270,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3434551BDFC277007EEFE5 /* 2.json in Resources */,
 				5EB74E661BDE1F8900FD62FE /* LaunchScreen.storyboard in Resources */,
 				5EB74E631BDE1F8900FD62FE /* Assets.xcassets in Resources */,
+				5E3434561BDFC277007EEFE5 /* 3.json in Resources */,
 				5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */,
+				5E3434571BDFC277007EEFE5 /* sets.json in Resources */,
+				5E3434541BDFC277007EEFE5 /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +303,9 @@
 			files = (
 				5EB74E8D1BDE5E9800FD62FE /* Deck.swift in Sources */,
 				5EB74E8B1BDE5E8200FD62FE /* Card.swift in Sources */,
+				5E34344F1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift in Sources */,
 				5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */,
+				5E3434591BDFC682007EEFE5 /* DeckLibrary.swift in Sources */,
 				5EB74E951BDE819600FD62FE /* CardViewController.swift in Sources */,
 				5EB74E991BDF80ED00FD62FE /* DecksTableViewController.swift in Sources */,
 				5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */,

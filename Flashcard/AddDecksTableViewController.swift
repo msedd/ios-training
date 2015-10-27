@@ -21,6 +21,7 @@ class AddDecksTableViewController: UITableViewController {
         default:
         return
         }
+         self.navigationController?.popViewControllerAnimated(true)
         //flashcardsModel.logModel()
     }
 

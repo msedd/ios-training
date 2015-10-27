@@ -10,7 +10,7 @@ import UIKit
 
 class DecksTableViewController: UITableViewController {
     
-    let decks = flashcardsModel.decks
+    var decks : [Deck] = []
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -20,6 +20,11 @@ class DecksTableViewController: UITableViewController {
         return decks.count
     }
  
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        decks = flashcardsModel.decks
+        self.tableView.reloadData()
+    }
      override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("DeckCell",

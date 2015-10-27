@@ -14,8 +14,8 @@ class FlashcardsModel : NSObject{
     
     override init(){
         super.init()
-        self.createEnglishDeck()
-        self.createRussionDeck()
+        //self.createEnglishDeck()
+        //self.createRussionDeck()
     }
     
     func createDeck(name : String) -> Deck {
