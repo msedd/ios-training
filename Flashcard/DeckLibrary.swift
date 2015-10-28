@@ -24,11 +24,15 @@ class DeckLibrary : JSONResource{
         let json = jsonObject as! JSONDictionary
         let jsonSets = json["sets"] as! [AnyObject]
 
-        
+        /*
         self.downloads = []
         for jsonSet in jsonSets {
             self.downloads.append(DeckDownload(jsonObject: jsonSet))
         }
+        */
+        // neue Schreibweise in Swift2 
+        // init-Methode als Funktion reinreichen 
+        self.downloads = jsonSets.map(DeckDownload.init);
     }
 
 

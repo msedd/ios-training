@@ -75,12 +75,33 @@ class CardViewController: UIViewController {
     }
     private func updateViewText() {
 
-        cardView.text = flipped ? card?.backText : card?.frontText
+        //cardView.text = flipped ? card?.backText : card?.frontText
+        
+        UIView.transitionWithView(self.cardView, duration: 0.5, options: .TransitionFlipFromTop,
+        animations: {
+            self.cardView.text = self.flipped ? self.card?.backText : self.card?.frontText
+        },
+        completion:nil)
     }
     private func updateViewButtons() {
-        buttonWrong.hidden = !flipped
-        buttonFlip.hidden = flipped
-        buttonCorrect.hidden = !flipped
+        
+        // Ursprüngliche Position der Buttons sichern
+        let posWrong = buttonWrong.center
+        let posCorrect = buttonCorrect.center
+        // Falsch/Richtig Button in die Mitte über den Flip-Button positionieren...
+        buttonCorrect.center = buttonFlip.center
+        buttonWrong.center = buttonFlip.center
+        
+        
+        UIView.animateWithDuration(0.2, animations: {
+            // move the buttons back
+            self.buttonWrong.center = posWrong
+            self.buttonCorrect.center = posCorrect
+        })
+                
+                buttonWrong.hidden = !flipped
+                buttonFlip.hidden = flipped
+                buttonCorrect.hidden = !flipped
        
     }
 
