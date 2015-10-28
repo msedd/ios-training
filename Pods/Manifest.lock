@@ -1,0 +1,22 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - NSDate-Extensions-iOS7 (1.0.1)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - NSDate-Extensions-iOS7 (from `https://github.com/HiTask/NSDate-Extensions.git`)
+
+EXTERNAL SOURCES:
+  NSDate-Extensions-iOS7:
+    :git: https://github.com/HiTask/NSDate-Extensions.git
+
+CHECKOUT OPTIONS:
+  NSDate-Extensions-iOS7:
+    :commit: d71a283eddb162071e31552a7e9ea57c5874d4c8
+    :git: https://github.com/HiTask/NSDate-Extensions.git
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  NSDate-Extensions-iOS7: 30f0dccb47ebc0042f017ce8790d6c2774aae885
+
+COCOAPODS: 0.39.0

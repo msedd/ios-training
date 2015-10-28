@@ -1,0 +1,6 @@
+framework module NSDate_Extensions_iOS7 {
+  umbrella header "NSDate-Extensions-iOS7-umbrella.h"
+
+  export *
+  module * { export * }
+}
