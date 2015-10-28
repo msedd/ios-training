@@ -8,9 +8,19 @@
 
 import Foundation
 
+
+protocol DeckDownloadProtocol{
+    
+    func downloadFinished(download : DeckDownload)
+    
+}
+
 class DeckDownload :JSONResource{
     let id:Int
     let title : String
+    
+    var delegate : DeckDownloadProtocol?
+
     
     init(jsonObject : AnyObject) {
         let json = jsonObject as! JSONDictionary
@@ -28,5 +38,6 @@ class DeckDownload :JSONResource{
             let back = jsonCard["definition"] as! String
             deck.createCard(front, backText: back)
         }
+        delegate?.downloadFinished(self)
     }
 }

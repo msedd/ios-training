@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class DeckLibraryTableViewController: UITableViewController {
+class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtocol {
     
     let deckLibrary = DeckLibrary()
 
@@ -35,13 +35,18 @@ class DeckLibraryTableViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let download = self.deckLibrary.downloads[indexPath.row]
+        download.delegate = self
         download.load()
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
 
     func updateView() {
         self.deckLibrary.load()
-    
+    }
 
+    // MARK: - DeckDownloadDelegate
+    
+    func downloadFinished(download: DeckDownload) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
 }

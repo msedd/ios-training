@@ -10,10 +10,10 @@ import Foundation
 
 typealias JSONDictionary = [String:AnyObject]
 
+
 class DeckLibrary : JSONResource{
     
     var downloads = [DeckDownload]()
-    
     
     init() {
         super.init(bundleFilename: "sets")
