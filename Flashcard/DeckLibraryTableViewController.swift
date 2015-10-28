@@ -41,7 +41,9 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
     }
 
     func updateView() {
-        self.deckLibrary.load()
+        self.deckLibrary.load {
+            NSLog("Deck Library loaded!")
+        }
     }
 
     // MARK: - DeckDownloadDelegate

@@ -12,11 +12,16 @@ import Foundation
 class JSONResource {
     
     let url : NSURL
+    typealias CompletionHandler = () -> ()
+    private var completionHandler : CompletionHandler?
     
     init(bundleFilename: String) {
         self.url = NSBundle.mainBundle().URLForResource( bundleFilename , withExtension: "json")!
     }
-    
+    func load(completionHandler : CompletionHandler) {
+        self.completionHandler = completionHandler
+        load();
+    }
     func load() {
         let data = NSData(contentsOfURL: url)!
         handleData(data)
@@ -25,6 +30,7 @@ class JSONResource {
     func handleData(data : NSData) {
         let jsonObject = try! NSJSONSerialization.JSONObjectWithData(data, options: [])
         handleJSON(jsonObject)
+        self.completionHandler?()
     }
     /**
     Overwrite handleJSON in sub-classes to handle the JSON data
