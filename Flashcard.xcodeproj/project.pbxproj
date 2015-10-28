@@ -14,6 +14,7 @@
 		5E3434571BDFC277007EEFE5 /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3434531BDFC277007EEFE5 /* sets.json */; };
 		5E3434591BDFC682007EEFE5 /* DeckLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */; };
 		5E34345B1BDFC802007EEFE5 /* DeckDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E34345A1BDFC802007EEFE5 /* DeckDownload.swift */; };
+		5E63B5EA1BDFCD780053DF53 /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E63B5E91BDFCD780053DF53 /* JSONResource.swift */; };
 		5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */; };
 		5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */; };
 		5EB74E631BDE1F8900FD62FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E621BDE1F8900FD62FE /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		5E3434531BDFC277007EEFE5 /* sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets.json; sourceTree = "<group>"; };
 		5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibrary.swift; sourceTree = "<group>"; };
 		5E34345A1BDFC802007EEFE5 /* DeckDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDownload.swift; sourceTree = "<group>"; };
+		5E63B5E91BDFCD780053DF53 /* JSONResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResource.swift; sourceTree = "<group>"; };
 		5EB74E581BDE1F8900FD62FE /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB74E601BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E63B5E81BDFCD560053DF53 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				5E63B5E91BDFCD780053DF53 /* JSONResource.swift */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
 		5EB74E4F1BDE1F8900FD62FE = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		5EB74E5A1BDE1F8900FD62FE /* Flashcard */ = {
 			isa = PBXGroup;
 			children = (
+				5E63B5E81BDFCD560053DF53 /* helper */,
 				5EB74E891BDE5E5700FD62FE /* model */,
 				5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */,
 				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
@@ -306,6 +317,7 @@
 			files = (
 				5EB74E8D1BDE5E9800FD62FE /* Deck.swift in Sources */,
 				5EB74E8B1BDE5E8200FD62FE /* Card.swift in Sources */,
+				5E63B5EA1BDFCD780053DF53 /* JSONResource.swift in Sources */,
 				5E34345B1BDFC802007EEFE5 /* DeckDownload.swift in Sources */,
 				5E34344F1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift in Sources */,
 				5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */,

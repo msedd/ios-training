@@ -33,6 +33,11 @@ class DeckLibraryTableViewController: UITableViewController {
         cell.textLabel?.text = download.title
         return cell
     }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let download = self.deckLibrary.downloads[indexPath.row]
+        download.load()
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
 
     func updateView() {
         self.deckLibrary.load()
