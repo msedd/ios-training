@@ -38,12 +38,19 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         let download = self.deckLibrary.downloads[indexPath.row]
         download.delegate = self
-        download.load()
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        download.load {
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                self.tableView.reloadData()
+            }
+
+        }
     }
 
     func updateView() {
         self.deckLibrary.load {
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                self.tableView.reloadData()
+            }
             NSLog("Deck Library loaded!")
         }
     }
@@ -51,7 +58,7 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
     // MARK: - DeckDownloadDelegate
     
     func downloadFinished(download: DeckDownload) {
-        NSThread.sleepForTimeInterval(5);
+        //NSThread.sleepForTimeInterval(5);
         NSOperationQueue.mainQueue().addOperationWithBlock({
             self.navigationController?.popToRootViewControllerAnimated(true)
             MBProgressHUD.hideHUDForView(self.view, animated: true)
