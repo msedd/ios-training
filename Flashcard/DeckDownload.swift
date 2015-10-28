@@ -26,7 +26,11 @@ class DeckDownload :JSONResource{
         let json = jsonObject as! JSONDictionary
         self.id = json["id"] as! Int
         self.title = json["title"] as! String
-        super.init(bundleFilename: String(self.id))
+        //super.init(bundleFilename: String(self.id))
+        //super.init (url: NSURL(string: "https://www.ralfebert.de/flashcards/\(self.id).json")!)
+        
+        super.init (url: NSURL(string: "https://api.quizlet.com/2.0/sets/\(self.id)?client_id=CehJeM3ejY")!)
+                
     }
     override func handleJSON(jsonObject: AnyObject) {
         let json = jsonObject as! JSONDictionary

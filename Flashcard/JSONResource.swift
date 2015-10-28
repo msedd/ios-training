@@ -18,6 +18,11 @@ class JSONResource {
     init(bundleFilename: String) {
         self.url = NSBundle.mainBundle().URLForResource( bundleFilename , withExtension: "json")!
     }
+    
+    init(url: NSURL) {
+        self.url = url
+    }
+    
     func load(completionHandler : CompletionHandler) {
         self.completionHandler = completionHandler
         load();
