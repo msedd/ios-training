@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MBProgressHUD
 
 
 class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtocol {
@@ -34,6 +34,8 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         let download = self.deckLibrary.downloads[indexPath.row]
         download.delegate = self
         download.load()
@@ -49,6 +51,11 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
     // MARK: - DeckDownloadDelegate
     
     func downloadFinished(download: DeckDownload) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        NSThread.sleepForTimeInterval(5);
+        NSOperationQueue.mainQueue().addOperationWithBlock({
+            self.navigationController?.popToRootViewControllerAnimated(true)
+            MBProgressHUD.hideHUDForView(self.view, animated: true)
+        })
+        
     }
 }

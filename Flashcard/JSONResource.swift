@@ -28,8 +28,21 @@ class JSONResource {
         load();
     }
     func load() {
-        let data = NSData(contentsOfURL: url)!
-        handleData(data)
+        
+        if url.scheme.lowercaseString == "file" {
+            self.handleData(NSData(contentsOfURL: url)!)
+        } else {
+            let task = NSURLSession.sharedSession().dataTaskWithURL(self.url) {
+            (data, response, error) in
+            if let data=data{
+                self.handleData(data)
+            }else {
+                NSLog("%@", "Fehler beim Laden von \(self.url): \(error)")
+            }
+        }
+        task.resume()
+        
+        }
     }
     
     func handleData(data : NSData) {

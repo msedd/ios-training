@@ -27,6 +27,8 @@
 		5EB74E951BDE819600FD62FE /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E941BDE819600FD62FE /* CardViewController.swift */; };
 		5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */; };
 		5EB74E991BDF80ED00FD62FE /* DecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */; };
+		5EF91B6B1BE113DD00D6333F /* quizlet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5EF91B6A1BE113DD00D6333F /* quizlet.txt */; };
+		C8A305422A9300D8DC621D69 /* Pods_Flashcard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560BB5E84F929DC1596D3CDB /* Pods_Flashcard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560BB5E84F929DC1596D3CDB /* Pods_Flashcard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flashcard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibraryTableViewController.swift; sourceTree = "<group>"; };
 		5E3434501BDFC277007EEFE5 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		5E3434511BDFC277007EEFE5 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		5EB74E941BDE819600FD62FE /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDecksTableViewController.swift; sourceTree = "<group>"; };
 		5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksTableViewController.swift; sourceTree = "<group>"; };
+		5EF91B6A1BE113DD00D6333F /* quizlet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quizlet.txt; sourceTree = "<group>"; };
+		734B8A15574B30ABF3D6B1B8 /* Pods-Flashcard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flashcard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flashcard/Pods-Flashcard.debug.xcconfig"; sourceTree = "<group>"; };
+		C1BC7E6C800D9C5E5BE263A2 /* Pods-Flashcard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flashcard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flashcard/Pods-Flashcard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A305422A9300D8DC621D69 /* Pods_Flashcard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C047530F2F5EE256A61BE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				734B8A15574B30ABF3D6B1B8 /* Pods-Flashcard.debug.xcconfig */,
+				C1BC7E6C800D9C5E5BE263A2 /* Pods-Flashcard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E63B5E81BDFCD560053DF53 /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +131,8 @@
 				5EB74E6F1BDE1F8900FD62FE /* FlashcardTests */,
 				5EB74E7A1BDE1F8900FD62FE /* FlashcardUITests */,
 				5EB74E591BDE1F8900FD62FE /* Products */,
+				38C047530F2F5EE256A61BE7 /* Pods */,
+				69521FF2BFFF925E48B1AD39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +160,7 @@
 				5EB74E621BDE1F8900FD62FE /* Assets.xcassets */,
 				5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */,
 				5EB74E671BDE1F8900FD62FE /* Info.plist */,
+				5EF91B6A1BE113DD00D6333F /* quizlet.txt */,
 			);
 			path = Flashcard;
 			sourceTree = "<group>";
@@ -180,6 +199,14 @@
 			name = model;
 			sourceTree = "<group>";
 		};
+		69521FF2BFFF925E48B1AD39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				560BB5E84F929DC1596D3CDB /* Pods_Flashcard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB74E801BDE1F8900FD62FE /* Build configuration list for PBXNativeTarget "Flashcard" */;
 			buildPhases = (
+				663AA9C16235E3B0642F7FC4 /* Check Pods Manifest.lock */,
 				5EB74E541BDE1F8900FD62FE /* Sources */,
 				5EB74E551BDE1F8900FD62FE /* Frameworks */,
 				5EB74E561BDE1F8900FD62FE /* Resources */,
+				B1353FC97E4AA00F3E9B4468 /* Embed Pods Frameworks */,
+				DD5549C04A89C4258EA5C633 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +321,7 @@
 				5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */,
 				5E3434571BDFC277007EEFE5 /* sets.json in Resources */,
 				5E3434541BDFC277007EEFE5 /* 1.json in Resources */,
+				5EF91B6B1BE113DD00D6333F /* quizlet.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +340,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		663AA9C16235E3B0642F7FC4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1353FC97E4AA00F3E9B4468 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flashcard/Pods-Flashcard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5549C04A89C4258EA5C633 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flashcard/Pods-Flashcard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EB74E541BDE1F8900FD62FE /* Sources */ = {
@@ -463,6 +542,7 @@
 		};
 		5EB74E811BDE1F8900FD62FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734B8A15574B30ABF3D6B1B8 /* Pods-Flashcard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flashcard/Info.plist;
@@ -474,6 +554,7 @@
 		};
 		5EB74E821BDE1F8900FD62FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BC7E6C800D9C5E5BE263A2 /* Pods-Flashcard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flashcard/Info.plist;
