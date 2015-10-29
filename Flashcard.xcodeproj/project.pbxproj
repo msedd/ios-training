@@ -67,6 +67,10 @@
 		5E8A8B8B1BE213DF00673349 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5E8A8B8E1BE2184700673349 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		5E8A8B911BE229D400673349 /* Flashcards 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Flashcards 2.xcdatamodel"; sourceTree = "<group>"; };
+		5E8A8B921BE258C800673349 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		5E8A8B931BE258C800673349 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5E8A8B941BE2598700673349 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		5E8A8B951BE2598700673349 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5EB74E581BDE1F8900FD62FE /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB74E601BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -477,6 +481,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5EB74E601BDE1F8900FD62FE /* Base */,
+				5E8A8B921BE258C800673349 /* de */,
+				5E8A8B941BE2598700673349 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -485,6 +491,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				5EB74E651BDE1F8900FD62FE /* Base */,
+				5E8A8B931BE258C800673349 /* de */,
+				5E8A8B951BE2598700673349 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

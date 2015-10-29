@@ -32,7 +32,7 @@ class FlashcardsModel : NSObject{
     
     func createEnglishDeck() -> Deck{
     
-        let deck = createDeck("Englisch ↔ Deutsch")
+        let deck = createDeck( NSLocalizedString("EnglishGerman", value:"English ↔ German", comment: "Deck Name") )
         deck.createCard("bird", backText: "Vogel")
         deck.createCard("tree", backText: "Baum")
         deck.createCard("house", backText: "Haus")
@@ -40,7 +40,7 @@ class FlashcardsModel : NSObject{
         return deck
     }
     func createRussionDeck() -> Deck{
-        let deck = createDeck("Russisch ↔ Deutsch")
+        let deck = createDeck( NSLocalizedString("RussianGerman", value:"Russian ↔ German", comment: "Deck Name"))
         deck.createCard("Спасибо", backText: "Danke")
         deck.createCard("А у тебя?", backText: "Und dir")
         deck.createCard("Тоже", backText: "auch")

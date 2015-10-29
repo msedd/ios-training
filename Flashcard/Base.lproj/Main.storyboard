@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Lernkarte-->
+        <!--Card View Controller-->
         <scene sceneID="HFy-Tm-Xs9">
             <objects>
                 <viewController id="5Ni-FM-GaW" customClass="CardViewController" customModule="Flashcard" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                             <constraint firstItem="9pI-Ig-xnP" firstAttribute="leading" secondItem="oqn-YM-mrQ" secondAttribute="trailing" constant="17" id="rhi-gc-V31"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lernkarte" id="G43-D1-r6e"/>
+                    <navigationItem key="navigationItem" id="G43-D1-r6e"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="buttonCorrect" destination="w2f-Fd-m9s" id="BuL-G1-Z5K"/>
@@ -116,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="-404" y="-918"/>
         </scene>
-        <!--Neu-->
+        <!--New-->
         <scene sceneID="7U1-XV-AYD">
             <objects>
                 <tableViewController id="v8q-8Y-vl9" customClass="AddDecksTableViewController" customModule="Flashcard" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Neuer Kartenstabel" id="dX9-ac-F0i">
+                            <tableViewSection headerTitle="NEW DECK" id="dX9-ac-F0i">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Yxq-qX-uru" style="IBUITableViewCellStyleDefault" id="yfc-QM-z5e">
                                         <rect key="frame" x="0.0" y="114" width="320" height="44"/>
@@ -134,7 +134,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Englisch &lt;-&gt; Deutsch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxq-qX-uru">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="English &lt;-&gt; German" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yxq-qX-uru">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -151,7 +151,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Russisch &lt;-&gt; Deutsch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEM-Ca-jgs">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Russian &lt;-&gt; German" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEM-Ca-jgs">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,7 +188,7 @@
                             <outlet property="delegate" destination="v8q-8Y-vl9" id="aiV-tl-HT8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Neu" id="Hwi-ts-nsl"/>
+                    <navigationItem key="navigationItem" title="New" id="Hwi-ts-nsl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixP-hb-7wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,7 +211,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f7g-cj-NKs">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f7g-cj-NKs">
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -250,7 +250,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8eh-XW-Pst">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8eh-XW-Pst">
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>

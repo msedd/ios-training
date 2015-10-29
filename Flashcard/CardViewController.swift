@@ -83,6 +83,17 @@ class CardViewController: UIViewController {
         },
         completion:nil)
     }
+    private func updateViewNavTitle() {
+        if let card = self.card, let index = cards.indexOf(card) {
+        var title = NSLocalizedString("CardTitle", value:"{index} of {count}",
+        comment:"Placeholders {index}, {count}")
+        title = title.stringByReplacingOccurrencesOfString("{index}",
+        withString: String(index + 1))
+        title = title.stringByReplacingOccurrencesOfString("{count}",
+        withString: String(cards.count))
+        self.navigationItem.title = title
+        }
+    }
     private func updateViewButtons() {
         
         // Ursprüngliche Position der Buttons sichern

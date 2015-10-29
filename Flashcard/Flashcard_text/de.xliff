@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Flashcard/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body/>
+  </file>
+  <file original="Flashcard/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body>
+      <trans-unit id="1Kc-b9-pPG.normalTitle">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "1Kc-b9-pPG";</note>
+      </trans-unit>
+      <trans-unit id="AZt-kk-Obh.text">
+        <source>Download</source>
+        <target>Download</target>
+        <note>Class = "UILabel"; text = "Download"; ObjectID = "AZt-kk-Obh";</note>
+      </trans-unit>
+      <trans-unit id="Hwi-ts-nsl.title">
+        <source>New</source>
+        <target>New</target>
+        <note>Class = "UINavigationItem"; title = "New"; ObjectID = "Hwi-ts-nsl";</note>
+      </trans-unit>
+      <trans-unit id="Yoo-UB-C8a.title">
+        <source>Download</source>
+        <target>Download</target>
+        <note>Class = "UINavigationItem"; title = "Download"; ObjectID = "Yoo-UB-C8a";</note>
+      </trans-unit>
+      <trans-unit id="Yxq-qX-uru.text">
+        <source>English &lt;-&gt; German</source>
+        <target>English &lt;-&gt; German</target>
+        <note>Class = "UILabel"; text = "English &lt;-&gt; German"; ObjectID = "Yxq-qX-uru";</note>
+      </trans-unit>
+      <trans-unit id="dX9-ac-F0i.headerTitle">
+        <source>NEW DECK</source>
+        <target>NEW DECK</target>
+        <note>Class = "UITableViewSection"; headerTitle = "NEW DECK"; ObjectID = "dX9-ac-F0i";</note>
+      </trans-unit>
+      <trans-unit id="nEM-Ca-jgs.text">
+        <source>Russian &lt;-&gt; German</source>
+        <target>Russian &lt;-&gt; German</target>
+        <note>Class = "UILabel"; text = "Russian &lt;-&gt; German"; ObjectID = "nEM-Ca-jgs";</note>
+      </trans-unit>
+      <trans-unit id="wkd-M9-AWB.normalTitle">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "wkd-M9-AWB";</note>
+      </trans-unit>
+      <trans-unit id="yxT-Ze-qZi.title">
+        <source>Flashcards</source>
+        <target>Flashcards</target>
+        <note>Class = "UINavigationItem"; title = "Flashcards"; ObjectID = "yxT-Ze-qZi";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Flashcard/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Flashcard/Localizable.strings" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body>
+      <trans-unit id="CardTitle">
+        <source>{index} of {count}</source>
+        <note>Placeholders {index}, {count}</note>
+      </trans-unit>
+      <trans-unit id="EnglishGerman">
+        <source>English ↔ German</source>
+        <note>Deck Name</note>
+      </trans-unit>
+      <trans-unit id="RussianGerman">
+        <source>Russian ↔ German</source>
+        <note>Deck Name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="FlashcardTests/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="FlashcardUITests/Info.plist" source-language="en" datatype="plaintext" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.1" build-num="7B91b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
