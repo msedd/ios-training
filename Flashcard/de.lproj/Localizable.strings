@@ -1,0 +1,9 @@
+/* Placeholders {index}, {count} */
+"CardTitle" = "{index} von {count}";
+
+/* Deck Name */
+"EnglishGerman" = "Englisch ↔ Deutsch";
+
+/* Deck Name */
+"RussianGerman" = "Russisch ↔ Deutsch";
+

@@ -71,6 +71,7 @@ class CardViewController: UIViewController {
         if self.isViewLoaded(){
             updateViewText()
             updateViewButtons()
+            updateViewNavTitle()
         }
     }
     private func updateViewText() {
