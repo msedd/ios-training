@@ -7,11 +7,10 @@
 //
 
 import Foundation
+import CoreData
 
-class Card: NSObject{
-    
-    var frontText: String = ""
-    var backText: String = ""
-    
+class Card : NSManagedObject{
+
+    static let EntityName = "Card"
     
 }

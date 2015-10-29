@@ -15,6 +15,10 @@
 		5E3434591BDFC682007EEFE5 /* DeckLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */; };
 		5E34345B1BDFC802007EEFE5 /* DeckDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E34345A1BDFC802007EEFE5 /* DeckDownload.swift */; };
 		5E63B5EA1BDFCD780053DF53 /* JSONResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E63B5E91BDFCD780053DF53 /* JSONResource.swift */; };
+		5E8A8B881BE20D9B00673349 /* Flashcards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A8B861BE20D9B00673349 /* Flashcards.xcdatamodeld */; };
+		5E8A8B8C1BE213DF00673349 /* Deck+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A8B8A1BE213DF00673349 /* Deck+CoreDataProperties.swift */; };
+		5E8A8B8D1BE213DF00673349 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A8B8B1BE213DF00673349 /* Card+CoreDataProperties.swift */; };
+		5E8A8B8F1BE2184700673349 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A8B8E1BE2184700673349 /* CoreData.swift */; };
 		5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */; };
 		5EB74E611BDE1F8900FD62FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */; };
 		5EB74E631BDE1F8900FD62FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB74E621BDE1F8900FD62FE /* Assets.xcassets */; };
@@ -58,6 +62,11 @@
 		5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibrary.swift; sourceTree = "<group>"; };
 		5E34345A1BDFC802007EEFE5 /* DeckDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDownload.swift; sourceTree = "<group>"; };
 		5E63B5E91BDFCD780053DF53 /* JSONResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResource.swift; sourceTree = "<group>"; };
+		5E8A8B871BE20D9B00673349 /* Flashcards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flashcards.xcdatamodel; sourceTree = "<group>"; };
+		5E8A8B8A1BE213DF00673349 /* Deck+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deck+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E8A8B8B1BE213DF00673349 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E8A8B8E1BE2184700673349 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		5E8A8B911BE229D400673349 /* Flashcards 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Flashcards 2.xcdatamodel"; sourceTree = "<group>"; };
 		5EB74E581BDE1F8900FD62FE /* Flashcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB74E601BDE1F8900FD62FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,9 +128,33 @@
 		5E63B5E81BDFCD560053DF53 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				5E8A8B8E1BE2184700673349 /* CoreData.swift */,
 				5E63B5E91BDFCD780053DF53 /* JSONResource.swift */,
 			);
 			name = helper;
+			sourceTree = "<group>";
+		};
+		5E8A8B891BE20DA500673349 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				5E3434501BDFC277007EEFE5 /* 1.json */,
+				5E3434511BDFC277007EEFE5 /* 2.json */,
+				5E3434521BDFC277007EEFE5 /* 3.json */,
+				5E3434531BDFC277007EEFE5 /* sets.json */,
+			);
+			name = mock;
+			sourceTree = "<group>";
+		};
+		5E8A8B901BE218ED00673349 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
+				5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */,
+				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
+				5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */,
+				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
+			);
+			name = ui;
 			sourceTree = "<group>";
 		};
 		5EB74E4F1BDE1F8900FD62FE = {
@@ -149,14 +182,10 @@
 		5EB74E5A1BDE1F8900FD62FE /* Flashcard */ = {
 			isa = PBXGroup;
 			children = (
+				5E8A8B901BE218ED00673349 /* ui */,
 				5E63B5E81BDFCD560053DF53 /* helper */,
 				5EB74E891BDE5E5700FD62FE /* model */,
 				5EB74E5B1BDE1F8900FD62FE /* AppDelegate.swift */,
-				5EB74E5F1BDE1F8900FD62FE /* Main.storyboard */,
-				5EB74E961BDF791C00FD62FE /* AddDecksTableViewController.swift */,
-				5EB74E941BDE819600FD62FE /* CardViewController.swift */,
-				5E34344E1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift */,
-				5EB74E981BDF80ED00FD62FE /* DecksTableViewController.swift */,
 				5EB74E621BDE1F8900FD62FE /* Assets.xcassets */,
 				5EB74E641BDE1F8900FD62FE /* LaunchScreen.storyboard */,
 				5EB74E671BDE1F8900FD62FE /* Info.plist */,
@@ -186,15 +215,15 @@
 		5EB74E891BDE5E5700FD62FE /* model */ = {
 			isa = PBXGroup;
 			children = (
-				5E3434501BDFC277007EEFE5 /* 1.json */,
-				5E3434511BDFC277007EEFE5 /* 2.json */,
-				5E3434521BDFC277007EEFE5 /* 3.json */,
-				5E3434531BDFC277007EEFE5 /* sets.json */,
+				5E8A8B891BE20DA500673349 /* mock */,
+				5E8A8B8A1BE213DF00673349 /* Deck+CoreDataProperties.swift */,
+				5E8A8B8B1BE213DF00673349 /* Card+CoreDataProperties.swift */,
 				5EB74E8A1BDE5E8200FD62FE /* Card.swift */,
 				5EB74E8C1BDE5E9800FD62FE /* Deck.swift */,
 				5EB74E8E1BDE5EBD00FD62FE /* FlashcardsModel.swift */,
 				5E3434581BDFC682007EEFE5 /* DeckLibrary.swift */,
 				5E34345A1BDFC802007EEFE5 /* DeckDownload.swift */,
+				5E8A8B861BE20D9B00673349 /* Flashcards.xcdatamodeld */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -395,8 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB74E8D1BDE5E9800FD62FE /* Deck.swift in Sources */,
+				5E8A8B8D1BE213DF00673349 /* Card+CoreDataProperties.swift in Sources */,
 				5EB74E8B1BDE5E8200FD62FE /* Card.swift in Sources */,
 				5E63B5EA1BDFCD780053DF53 /* JSONResource.swift in Sources */,
+				5E8A8B8F1BE2184700673349 /* CoreData.swift in Sources */,
+				5E8A8B8C1BE213DF00673349 /* Deck+CoreDataProperties.swift in Sources */,
 				5E34345B1BDFC802007EEFE5 /* DeckDownload.swift in Sources */,
 				5E34344F1BDFBFE0007EEFE5 /* DeckLibraryTableViewController.swift in Sources */,
 				5EB74E971BDF791C00FD62FE /* AddDecksTableViewController.swift in Sources */,
@@ -404,6 +436,7 @@
 				5EB74E951BDE819600FD62FE /* CardViewController.swift in Sources */,
 				5EB74E991BDF80ED00FD62FE /* DecksTableViewController.swift in Sources */,
 				5EB74E5C1BDE1F8900FD62FE /* AppDelegate.swift in Sources */,
+				5E8A8B881BE20D9B00673349 /* Flashcards.xcdatamodeld in Sources */,
 				5EB74E8F1BDE5EBD00FD62FE /* FlashcardsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +685,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E8A8B861BE20D9B00673349 /* Flashcards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E8A8B911BE229D400673349 /* Flashcards 2.xcdatamodel */,
+				5E8A8B871BE20D9B00673349 /* Flashcards.xcdatamodel */,
+			);
+			currentVersion = 5E8A8B911BE229D400673349 /* Flashcards 2.xcdatamodel */;
+			path = Flashcards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5EB74E501BDE1F8900FD62FE /* Project object */;
 }

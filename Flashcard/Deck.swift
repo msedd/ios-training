@@ -7,23 +7,25 @@
 //
 
 import Foundation
+import CoreData
 
-class Deck : NSObject{
+class Deck : NSManagedObject{
     
-    var name : String = ""
-    var cards : [Card] = []
+    static let EntityName = "Deck"
     
     var cardsToLearn : [Card] {
         get {
-        return self.cards
+            return Array(self.cards ?? [])
         }
     }
     
     func createCard(frontText: String, backText: String) -> Card {
-        let card = Card()
+        
+        let card = NSEntityDescription.insertNewObjectForEntityForName(Card.EntityName, inManagedObjectContext: self.managedObjectContext!) as! Card
+
         card.frontText = frontText
         card.backText = backText
-        self.cards.append (card)
+        card.deck = self
         return card;
     }
     

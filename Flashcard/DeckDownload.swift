@@ -29,6 +29,8 @@ class DeckDownload :JSONResource{
         //super.init(bundleFilename: String(self.id))
         //super.init (url: NSURL(string: "https://www.ralfebert.de/flashcards/\(self.id).json")!)
         
+        
+        // TODO Refactor to NSURLComponents
         super.init (url: NSURL(string: "https://api.quizlet.com/2.0/sets/\(self.id)?client_id=CehJeM3ejY")!)
                 
     }
@@ -42,6 +44,7 @@ class DeckDownload :JSONResource{
             let back = jsonCard["definition"] as! String
             deck.createCard(front, backText: back)
         }
+        flashcardsModel.save()
         delegate?.downloadFinished(self)
     }
 }

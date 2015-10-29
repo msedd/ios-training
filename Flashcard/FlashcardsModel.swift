@@ -7,21 +7,26 @@
 //
 
 import Foundation
+import CoreData
 
 class FlashcardsModel : NSObject{
     
-    var decks : [Deck] = []
+    var decks : [Deck] {
+        let request = NSFetchRequest (entityName: Deck.EntityName)
+        request.sortDescriptors = [ NSSortDescriptor(key: "name", ascending: true)]
+        return try! managedObjectContext.executeFetchRequest(request) as! [Deck]
+    }
+    private let managedObjectContext : NSManagedObjectContext
     
-    override init(){
-        super.init()
-        //self.createEnglishDeck()
-        //self.createRussionDeck()
+    
+    init(managedObjectContext : NSManagedObjectContext){
+        self.managedObjectContext = managedObjectContext
+         super.init()
     }
     
     func createDeck(name : String) -> Deck {
-        let deck = Deck()
+        let deck = NSEntityDescription.insertNewObjectForEntityForName(Deck.EntityName, inManagedObjectContext: self.managedObjectContext) as! Deck
         deck.name = name;
-        self.decks.append(deck)
         return deck
     }
     
@@ -31,6 +36,7 @@ class FlashcardsModel : NSObject{
         deck.createCard("bird", backText: "Vogel")
         deck.createCard("tree", backText: "Baum")
         deck.createCard("house", backText: "Haus")
+        save()
         return deck
     }
     func createRussionDeck() -> Deck{
@@ -40,9 +46,20 @@ class FlashcardsModel : NSObject{
         deck.createCard("Тоже", backText: "auch")
         deck.createCard("Как дела?",backText:"Wie geht’s")
         deck.createCard("Здравствуйте!", backText: "formeller Gruß")
-        
+        save()        
         return deck
 
     }
+    func save(){
+        do{
+            try managedObjectContext.save()
+        }
+        catch let error as NSError{
+            NSLog("Error saving: %@", error)
+        }
+    }
 }
-let flashcardsModel = FlashcardsModel();
+
+
+private let coreData = try! CoreData(sqliteDocumentName: "Flashcards.db", schemaName: "Flashcards")
+let flashcardsModel = FlashcardsModel(managedObjectContext: coreData.createManagedObjectContext());
