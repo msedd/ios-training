@@ -15,7 +15,11 @@ class Deck : NSManagedObject{
     
     var cardsToLearn : [Card] {
         get {
-            return Array(self.cards ?? [])
+            let cards = Array(self.cards ?? [])
+            return cards.filter { (c:Card) -> Bool in
+                return c.scheduleDate == nil || c.scheduleDate!.isInPast()
+                //return
+            }
         }
     }
     

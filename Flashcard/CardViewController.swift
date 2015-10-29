@@ -45,11 +45,17 @@ class CardViewController: UIViewController {
     }
     
     @IBAction func correct(sender: AnyObject) {
+        
+        let now = NSDate()
+        self.card?.answeredCorrect(true, date: now)
         showNextCard()
+        
     }
     
     
     @IBAction func wrong(sender: AnyObject) {
+        let now = NSDate()
+        self.card?.answeredCorrect(false, date: now)
         showNextCard()
     }
     
