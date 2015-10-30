@@ -38,18 +38,13 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         let download = self.deckLibrary.downloads[indexPath.row]
         download.delegate = self
-        download.load {
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                self.tableView.reloadData()
-            }
-
-        }
+        download.load()
     }
 
     func updateView() {
-        self.deckLibrary.load {
+        self.deckLibrary.load {[weak self] in
             NSOperationQueue.mainQueue().addOperationWithBlock {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
             NSLog("Deck Library loaded!")
         }
@@ -64,5 +59,8 @@ class DeckLibraryTableViewController: UITableViewController, DeckDownloadProtoco
             MBProgressHUD.hideHUDForView(self.view, animated: true)
         })
         
+    }
+    deinit{
+        print ("RIP \(self.dynamicType)")
     }
 }

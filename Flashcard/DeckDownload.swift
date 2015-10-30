@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol DeckDownloadProtocol{
+protocol DeckDownloadProtocol : class{
     
     func downloadFinished(download : DeckDownload)
     
@@ -19,7 +19,7 @@ class DeckDownload :JSONResource{
     let id:Int
     let title : String
     
-    var delegate : DeckDownloadProtocol?
+    weak  var delegate : DeckDownloadProtocol?
 
     
     init(jsonObject : AnyObject) {
